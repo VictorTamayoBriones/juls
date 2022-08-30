@@ -5,6 +5,10 @@ export const HeroContainer = styled.div`
     height: 100vh;
     overflow: hidden;
     display: flex;
+
+    @media(max-width: 746px){
+        display: block;
+    }
 `
 
 export const Description = styled.div`
@@ -35,6 +39,25 @@ export const Description = styled.div`
             box-shadow: 0px 0px 0px 6px #00000010;
         }
     }
+
+    @media(max-width: 900px){
+        position: relative;
+        z-index: 2;
+    }
+
+    @media(max-width: 746px){
+        width: 100%;
+    }
+
+    @media(max-width:746px){
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        h1{
+            margin: auto;
+        }
+        padding-bottom: 10% !important;
+    }
 `;
 
 export const SectionTitle = styled.div`
@@ -56,6 +79,11 @@ export const SectionTitle = styled.div`
         font-size: 22px;
     }
 
+    @media(max-width:900px){
+        position: relative;
+        z-index: 2;
+    }
+
 `;
 
 export const Desc = styled.div`
@@ -65,11 +93,36 @@ export const Desc = styled.div`
         letter-spacing: 1px;
         line-height: 40px;
     }
+
+    @media(max-width:900px){
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        p{
+            font-size: 25px;
+        }
+    }
 `
 
 export const ImageContainer= styled.div`
     width: 60%;
     img{
         width: 100%;
+    }
+
+    @media(max-width:746px){
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        opacity: .5;
+        position: absolute !important;
+        top: 0;
+    }
+
+    @media(max-width:449px){
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
     }
 `;

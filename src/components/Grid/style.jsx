@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const GridContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    padding-bottom: 50px;
     h2{
         width: max-content;
         margin: 50px auto;
@@ -15,14 +15,14 @@ export const GridContainer = styled.div`
 
 export const GridComponent = styled.div`
     width: 80%;
-    height: 600px;
+    height: 800px;
     overflow: hidden;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     div{
         &:nth-child(1){
-            width: 30%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             background: #000;
@@ -39,11 +39,49 @@ export const GridComponent = styled.div`
             }
         }
         &:nth-child(2){
-            width: 70%;
+            width: 60%;
+            position: relative;
             div{
                 :nth-child(1){
                     width: 100%;
                     height: 100%;
+                }
+            }
+        }
+    }
+
+    @media(max-width:1000px){
+        width: 90%;
+        height: 500px;
+    }
+
+    @media(max-width:617px){
+        div{
+            &:nth-child(3){
+                img{
+                    transform: translateY(-0%) !important;
+                }
+            }
+        }
+    }
+
+    @media(max-width:471px){
+        height: 400px;
+        div{
+            &:nth-child(3){
+                width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    @media(max-width:367px){
+        height: 300px;
+        div{
+            &:nth-child(3){
+                img{
+                    transform: translateY(-20%) !important;
                 }
             }
         }
