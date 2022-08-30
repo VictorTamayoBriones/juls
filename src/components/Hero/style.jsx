@@ -56,7 +56,6 @@ export const Description = styled.div`
         h1{
             margin: auto;
         }
-        padding-bottom: 10% !important;
     }
 `;
 
