@@ -22,7 +22,6 @@ export const AboutContainer = styled.div`
         display: flex;
         position: relative;
         .image{
-            height: 350px;
             width: 50%;
             display: flex;
             position: absolute;
@@ -32,6 +31,7 @@ export const AboutContainer = styled.div`
             
             img{
                 width: auto;
+                object-fit: cover;
             }
         }
     }
