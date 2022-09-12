@@ -83,6 +83,12 @@ export const SectionTitle = styled.div`
         z-index: 2;
     }
 
+    @media(max-width:325px){
+        h1{
+            font-size: 80px;
+        }
+    }
+
 `;
 
 export const Desc = styled.div`

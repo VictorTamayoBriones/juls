@@ -19,7 +19,8 @@ function Hero() {
                 <span>Ropa y Artículos Exclusivos</span>
             </SectionTitle>
             <Desc>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam cupiditate animi libero hic iure nobis alias labore reprehenderit perferendis esse?</p>
+                <p>Sé la unión perfecta entre el diseño, la innovación, el ingenio, y tú esencia... <br />
+                ¿Quién realmente quieres ser?... <br /> Sé JULS</p>
             </Desc>
             <button onClick={ ()=>window.scroll(0, height)} >Know more</button>
         </Description>
