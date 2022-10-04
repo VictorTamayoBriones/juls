@@ -17,7 +17,7 @@ export const AboutContainer = styled.div`
         line-height: 30px;
         margin-bottom: 50px;
     }
-
+//this is a comment to test some task
     .body{
         display: flex;
         position: relative;
